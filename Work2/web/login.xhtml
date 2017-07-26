@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Login</title>
+    </h:head>
+    <body>
+        <h:form>
+            <h:panelGrid columns="2" >
+                <h:outputLabel value="Username : "/>
+                <h:inputText value="#{usersControler.username}"/>
+                <h:outputLabel value="Password : "/>
+                <h:inputText value="#{usersControler.password}"/>
+            </h:panelGrid>
+            <h:commandButton value="Login" action="#{usersControler.login()}"/>
+                        <h:commandButton id="back"
+                             value="Back" action="index" />
+        </h:form>
+    </body>
+
+</html>
+

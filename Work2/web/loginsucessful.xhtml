@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:form>
+        <h:commandButton value="Logout"
+                         action="#{usersControler.logout()}"/>
+        <h:commandButton id="back" value="Back" action="loginsucessful" />
+        <h:commandButton value="Consultar tópicos" action="topicslist" />
+        <h:commandButton value="Adicionar tópicos" action="addtopics" />
+        <h:commandButton value="Adicionar Notícias" action="addnews" />
+        <h:commandButton value="Consultar todas as notícias" action="newslist" />
+        <h:commandButton value="Consultar última notícia de um tópico" action="lastnewstopic" />
+    </h:form>
+
+</html>
+

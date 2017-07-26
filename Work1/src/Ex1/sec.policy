@@ -1,0 +1,15 @@
+grant {
+ // allows anyone to listen on un-privileged ports
+ 	permission java.net.SocketPermission "*:1024-65535", "listen,accept,connect";
+        //Mudar a path consoante o vosso pc
+        permission java.io.FilePermission "/home/zsdaking/Downloads/Trabalho1/config.txt", "read";
+
+        permission java.io.FilePermission "publishers", "read,write";
+        permission java.io.FilePermission "topics", "read,write";
+        permission java.io.FilePermission "news", "read,write";
+        permission java.io.FilePermission "consumers", "read,write";
+        permission java.io.FilePermission "newsb", "read,write";
+        permission java.io.FilePermission "offline", "read,write,delete";
+        permission java.io.FilePermission "offline2", "read,write";
+        permission java.util.PropertyPermission "*", "read, write";
+};
